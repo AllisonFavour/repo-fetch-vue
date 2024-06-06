@@ -18,10 +18,12 @@
 .nav-bar {
   width: 100%;
   /* height: 14vh; */
+  height: auto;
   padding: 14px 50px;
   display: flex;
   justify-content: space-between;
   place-items: center;
+  align-items: center;
 }
 
 .nav-bar a {

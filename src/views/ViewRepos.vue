@@ -20,7 +20,7 @@ onMounted(() => {
     <h1>Allison Favour's Repos</h1>
 
     <!-- <p>{{ state.apiData }}</p> -->
-    <p v-if="!state.apiData">Loading...</p>
+    <p v-if="!state.apiData" class="loading">Loading...</p>
 
     <div class="repo">
       <ul v-for="repo in state.apiData" :key="repo.id" class="repo-box">
@@ -48,6 +48,10 @@ onMounted(() => {
   font-size: calc(0.4rem + 2vw);
   text-align: center;
   text-wrap: wrap;
+}
+
+.loading {
+  color: hsla(160, 100%, 37%, 1);
 }
 
 .repo {
